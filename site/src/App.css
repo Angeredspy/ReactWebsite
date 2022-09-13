@@ -40,4 +40,12 @@
 
 .profile-role-tagline {
   color: antiquewhite;
+} 
+
+.highlighted-text {
+  color: rgb(94, 161, 240)
+} 
+
+.primary-text {
+  color: antiquewhite;
 }
