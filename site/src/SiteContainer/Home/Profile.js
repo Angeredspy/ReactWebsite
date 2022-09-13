@@ -51,7 +51,7 @@ export default function Profile() {
                     1000,
                     "Fluid, Fruitful & Fun Collaboration",
                     1000,
-                    "Everlearning Developer",
+                    "Software Philomath",
                     2000,
                   ]}
                   loop={Infinity}
