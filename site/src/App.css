@@ -31,9 +31,13 @@
 } 
 
 .layer1 {
-  background-image: url('../public/layered-waves-haikei.svg')
+  background-image: url('../public/layered-waves-haikei.svg');
 } 
 
 .typical-class {
-  color: antiquewhite
+  color: antiquewhite;
+}
+
+.profile-role-tagline {
+  color: antiquewhite;
 }
