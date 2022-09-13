@@ -1,11 +1,12 @@
 import React from "react";
-import Typical from "react-typical";
+import Typical from "react-typical"; 
+import './Profile.css';
 
 export default function Profile() {
   return (
-    <div className="profile-container">
+    <div className="profile-container padding-div">
       <div className="profile-parent">
-        <div className="spacer layer1 profile-details">
+        <div className="profile-details">
           <div className="cols">
             <div className="cols-icon">
               <a
@@ -37,7 +38,7 @@ export default function Profile() {
               Hi! I'm <span className="highlighted-text">Chris</span>
             </span>
           </div>
-          <div className="profile-detials-role">
+          <div className="profile-details-role">
             <span className="primary-text">
               {" "}
               <h1>

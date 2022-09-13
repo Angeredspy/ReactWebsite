@@ -1,51 +1,20 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.spacer {
-  aspect-ratio: 900/515; 
-  width: 100%; 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} 
-
-.layer1 {
-  background-image: url('../public/layered-waves-haikei.svg');
-} 
-
-.typical-class {
-  color: antiquewhite;
-}
-
-.profile-role-tagline {
-  color: antiquewhite;
-} 
-
-.highlighted-text {
-  color: rgb(94, 161, 240)
-} 
-
-.primary-text {
-  color: antiquewhite;
+:root{
+    --light-blue : #04C3FF;
+    --light-blue-shadow:  rgb(69 211 255 / 27%);
+    --sea-green: #0ABEAD;
+    --sea-green-dark: #0CBFAE;
+    --sea-green-extra-dark: #09BEAD;
+    --sea-green-shadow: rgba(11, 190, 173,0.4);
+    --header-hamburger-background : rgba(11, 190, 173,0.8);
+    --orange: #F57F17;
+    --blurple: #5323ff;
+    --orange-shadow: rgba(245, 127, 23,0.2);
+    --white: #ffffff;
+    --black: #333333;
+    --disabled-btn: #09bead7a;
+    --error-message:  #e44f4fd1;
+    --toast-error: #e44f4ffa;
+    --toast-shadow:  #9c9c9ce3;
+    --toast-success: #0CBFAE;
+    --loader-color: #0CBFAE
 }

@@ -1,0 +1,118 @@
+.profile-container {
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    background-image: url('../../../public/layered-waves-haikei.svg'); 
+    aspect-ratio: 900/515; 
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}  
+
+.padding-div {
+    padding-bottom: 450px; /* try 150 or 300 here once the header has been added*/
+} 
+
+.profile-parent {
+    display: flex; 
+    align-items: center;
+    color: aliceblue;
+} 
+
+.profile-details {
+    font-size: 24px;
+    font-family: "Poppins SemiBold";
+} 
+
+.profile-details-role {
+    display: flex; 
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+
+.profile-details-role h1 {
+    font-size: 35px;
+    font-family: cursive;
+}
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+
+  
+  .typical-class {
+    color: antiquewhite;
+  }
+  
+  .profile-role-tagline {
+    color: antiquewhite;
+  } 
+  
+  .highlighted-text {
+    color: rgb(94, 161, 240)
+  } 
+  
+  .primary-text {
+    color: white
+  } 
+
+.profile-role-tagline {
+    font-size: 19px; 
+    margin: 5px 0 0 0;
+    font-family: "Poppins Light";
+} 
+
+.profile-options .highlighted-btn {
+    margin: 0 0 0 28px;
+}
+
+.profile-options .highlighted-btn:hover {
+    margin: 0 0 0 28px; 
+    background-color: cornsilk;
+    color: rgb(1, 1, 1)
+} 
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 0px 0px var(--blurple);
+    border-radius: 50%; 
+    width: 380px;
+    height: 380px;
+    margin: 0 0 0 100px;
+} 
+
+.profile-picture-background {
+    height: 92%;
+    width: 92%; 
+    background-image: url('../../Assets/Home/IMG_2327.jpeg');
+    background-size: cover; 
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
