@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 50vh !important;
     min-height: 670px;
-    
+    background-image: url('../../../public/stacked-steps-haikei-2.svg'); 
 }

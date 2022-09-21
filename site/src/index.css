@@ -114,10 +114,10 @@ body ::-webkit-scrollbar-thumb {
 
 .highlighted-btn {
   color: var(--white);
-
   font-size: 12px;
-  background-color: #ff5823;
+  background-color: var(--purple-flurp); 
 }
+
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
     z-index: -900;

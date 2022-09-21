@@ -49,7 +49,7 @@ export default function Profile() {
                     1000,
                     "Graceful Knowledge Application",
                     1000,
-                    "Fluid, Fruitful & Fun Collaboration",
+                    "Fruitful & Fun Collaboration",
                     1000,
                     "Software Philomath",
                     2000,
@@ -60,7 +60,7 @@ export default function Profile() {
                 />
               </h1>
               <span className="profile-role-tagline">
-                Data Engineer with a knack for front and back end operations.
+                Tech lover with a knack for front & back end operations.
               </span>
             </span>
           </div>
