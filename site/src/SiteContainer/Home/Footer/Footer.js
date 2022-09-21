@@ -1,11 +1,11 @@
 import React from 'react'; 
 import './Footer.css'
 
-export default Footer = () => {
+export default function Footer() {
     return (
         <div className = 'footer-container'>
             <div className='footer-parent'> 
-            <img src={require('../../../../public/shape-bg.png')} alt='Footer'></img>
+            <img src={require('../../../Assets/Home/shape-bg.png')} alt='Footer'></img>
             </div>
         </div>
     )
