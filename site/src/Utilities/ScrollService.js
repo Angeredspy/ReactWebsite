@@ -39,7 +39,7 @@ export default class ScrollService {
         }
     }
     checkCurrentScreenUnderViewport = (event) => {
-        if (!event || object.keys(event).length < 1) return;
+        if (!event || Object.keys(event).length < 1) return;
         for (let screen of TOTAL_SCREENS) {
             let screenFromDom = document.getElementById(screen.screen_name); 
             if (!screenFromDom)
