@@ -33,7 +33,7 @@ export default function Header() {
         classes += "header-option-seperator";
 
         if(selectedScreen === index)
-        classes += "selected-header-option"
+        classes += "selected-header-option";
         return
     }
 
@@ -48,7 +48,7 @@ export default function Header() {
 
     return (
         <div>
-            <div className='header-option' onClick={() => setHeaderOptions(!showHeaderOptions)}>
+            <div className='header-container' onClick={() => setHeaderOptions(!showHeaderOptions)}>
                 <div className='header-parent'>
                     <div className='header-hamburger' onClick={() => setHeaderOptions(!showHeaderOptions)}>
                         <FontAwesomeIcon className='header-hamburger-bars' icon={faBars} />
