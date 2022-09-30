@@ -27,15 +27,13 @@ export default function Header() {
             ))
     }
 
-    const getHeaderOptionsClass = (index) => {
-        let classes = "header-option";
-        if(index < TOTAL_SCREENS.length -1)
-        classes += "header-option-seperator";
-
-        if(selectedScreen === index)
-        classes += "selected-header-option";
-        return
-    }
+  const getHeaderOptionsClass = (index) => {
+    let classes = "header-option ";
+    if (index < TOTAL_SCREENS.length - 1) classes += "header-option-seperator ";
+    if (selectedScreen === index) classes += "selected-header-option ";
+    return classes;
+  };
+ 
 
     const switchScreen = (index, screen )=> {
         let screenComponent=document.getElementById(screen.screen_name)
@@ -56,7 +54,7 @@ export default function Header() {
                     <div className='header-logo'>
                         <span>Chris</span>
                     </div>
-                    <div className={(showHeaderOptions) ? "header-options show-hambuer-options" : "header-options"}>
+                    <div className={showHeaderOptions ? "header-options show-hamburger-options" : "header-options"}>
                         {getHeaderOptions()}
                     </div>
                 </div>

@@ -38,11 +38,11 @@
 
 .header-option-seperator {
     margin: 0 50px 0 0;
-    color: var(--white)
-}
+    color: var(--white);
+  }
 
 .selected-header-option {
-    color: blueviolet
+    color: blueviolet;
 }
 
 @media only screen and (max-width: 1110px) {
