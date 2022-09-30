@@ -130,7 +130,7 @@ export default function Resume(props) {
                     />
                 ))}
             </div>,  
-            <div className='resume-screen-container' key='intersts'>
+            <div className='resume-screen-container' key='interests'>
                 <ResumeHeading 
                 heading='Charity' 
                 description='I am a member of a charity named Destiny Bound which empowers families, single parents and young adults.'
