@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import ScreenHeading from '../../Utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../Utilities/ScrollService';
 import Animations from '../../Utilities/Animations';
+import './Resume.css'
 
 export default function Resume(props) {
-    const [selectedBulletIndex,setSelectedBulletIndex] = useState(0)
+    const [selectedBulletIndex, setSelectedBulletIndex] = useState(0)
     const [carousalOffSetStyle, setcarousalOffSetStyle] = useState({})
 
     let fadeInScreenHandler = (screen) => {
@@ -39,7 +40,7 @@ export default function Resume(props) {
     }; 
 
     const resumeBullets = [
-        {label: 'Education', logoSrc: 'education.svg'},
+        { label: "Education", logoSrc: "education.svg" },
         {label: 'Work History', logoSrc: 'work-history.svg'},
         {label: 'Programming Skills', logoSrc: 'programming-skills.svg'},
         {label: 'Projects', logoSrc: 'projects.svg'},
@@ -68,7 +69,7 @@ export default function Resume(props) {
             title: 'A Robot',
             duration: {fromDate: '2022', toDate: '2022'},
             description: '',
-            subHeading: 'JavaScript',
+            subHeading: 'Technologies Used: JavaScript',
         },
         {
             title: 'TestBank',
@@ -165,19 +166,24 @@ export default function Resume(props) {
     };
 
     const getBullets = () => {
-        return  resumeBullets.map((bullet, index) => (
-            <div
-                onClick={()=>handleCarousal(index)} 
-                className = {index === selectedBulletIndex ? "bullet selected-bullet" : 'bullet'}
-                key={index}
-                >
-                    <img className='bullet-logo'
-                    src={require(`../Resume/${bullet.logoSrc}`)}
-                    alt='oops, check your connection and try again'
-                    />
-                </div>
-        ))
-    }
+        return resumeBullets.map((bullet, index) => (
+          <div
+            onClick={() => handleCarousal(index)}
+            className={
+              index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"
+            }
+            key={index}
+          >
+            <img
+              className="bullet-logo"
+              src={require(`../../Assets/Resume/${bullet.logoSrc}`)}
+              alt="B"
+            />
+            <span className="bullet-label">{bullet.label}</span>
+          </div>
+        ));
+      };
+    
 
     const getResumeScreen = () => {
         return (
@@ -198,7 +204,7 @@ export default function Resume(props) {
                     <div className='resume-bullets'>
                         <div className='bullet-container'>
                             <div className='bullet-icons'>
-                                <div className='bullets'>{getBullets}</div>
+                            <div className='bullets'>{getBullets()}</div>
                             </div>
                         </div>
                     </div>
