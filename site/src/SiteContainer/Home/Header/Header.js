@@ -51,7 +51,7 @@ export default function Header() {
                     <div className='header-hamburger' onClick={() => setHeaderOptions(!showHeaderOptions)}>
                         <FontAwesomeIcon className='header-hamburger-bars' icon={faBars} />
                     </div>
-                    <div className='header-logo'>
+                    <div className='hvr-hang header-logo name'>
                         <span>Chris</span>
                     </div>
                     <div className={showHeaderOptions ? "header-options show-hamburger-options" : "header-options"}>
