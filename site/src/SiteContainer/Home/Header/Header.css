@@ -57,7 +57,7 @@
   .name:hover {
     transform: scale(1.5);
     transition: 1.5s ease-out;
-    color: rgb(201, 246, 242);
+    color: rgb(119, 168, 234);
   }
 
   .name:not(:hover) {
