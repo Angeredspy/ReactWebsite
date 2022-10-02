@@ -21,7 +21,7 @@ export default function Profile() {
                 rel="noreferrer"
                 target="_blank"
               >
-                <i className="fa fa-plus-square"></i>
+                <i className="fa fa-heartbeat"></i>
               </a>
               <a
                 href="https://www.goodnewsnetwork.org"

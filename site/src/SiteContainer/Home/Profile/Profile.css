@@ -130,6 +130,7 @@
 
 .cols .cols-icon i:hover {
     transform: scale(1.5);
+    color: cornsilk;
 } 
 
 @media only screen and (max-width: 1110px) {
