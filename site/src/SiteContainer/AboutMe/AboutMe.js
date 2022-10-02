@@ -39,7 +39,7 @@ export default function AboutMe (props) {
     return (
         <div className='about-me-container screen-container' id={props.id || ''}>
                 <div className='about-me-parent'>
-                    <ScreenHeading title={'About Me'} subHeading={'Why Choose Me?'} />
+                    <ScreenHeading title={'About Me'} subHeading={'Who is this guy?'} />
                     <div className='about-me-card'>
                         <div className='about-me-profile'></div>
                         <div className='about-me-details'>

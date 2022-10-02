@@ -31,6 +31,19 @@
     font-weight: 600;
 }
 
+.header-option:hover {
+    transform: scale(1.07);
+    transition: 1.5s ease-out;
+    color: cornsilk;
+}
+
+.header-option:not(:hover) {
+    transform: scale(1.0);
+    transition:  1.1s ease-in;
+    color: cornsilk;
+}
+
+
 .header-hamburger {
     display: none;
     color: var(--white)
@@ -39,7 +52,8 @@
 .header-option-seperator {
     margin: 0 50px 0 0;
     color: var(--white);
-  }
+  } 
+  
 
 .selected-header-option {
     color: white;
