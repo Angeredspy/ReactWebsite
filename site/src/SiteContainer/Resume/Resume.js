@@ -108,20 +108,20 @@ export default function Resume (props) {
             />
             <div className='experience-description'>
                 <span className='resume-description-text'>
-                - Gracefully handled ownership of the Resolution/Escalation of all Engineering department related web-application issues.
+                ⦿ Gracefully handled ownership of the Resolution/Escalation of all Engineering department related web-application issues.
                 </span>
             </div>
             <div className='experience-description'>
                 <span className='resume-description-text'>
-                - Utilized TypeScript to develop and utilize backend processes to propel a smooth U.X. within our App
+                ⦿ Utilized TypeScript to develop and utilize backend processes to propel a smooth U.X. within our App
                 </span>
                 <br/>
                 <span className='resume-description-text'>
-                - Monitored multiple Staging and Production repositories for the Web Application.
+                ⦿ Monitored multiple Staging and Production repositories for the Web Application.
                 </span>
                 <br/> 
                 <span className='resume-description-text'>
-                - Utilized partner company API’s and JS to create large, essential automated data flows around the organization.
+                ⦿ Utilized partner company API’s and JS to create large, essential automated data flows around the organization.
                 </span>
                 <br/>
                 <span className='resume-description-text-see-more'>
