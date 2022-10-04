@@ -1,6 +1,8 @@
 import Home from "../SiteContainer/Home/Home";
 import AboutMe from "../SiteContainer/AboutMe/AboutMe";
 import Resume from "../SiteContainer/Resume/Resume";
+import TechnicalLandscape from '../SiteContainer/TechnicalLandscape/TechnicalLandscape';
+
 export const TOTAL_SCREENS = [
     {
         screen_name: "Home",
@@ -13,6 +15,10 @@ export const TOTAL_SCREENS = [
     {
         screen_name: "Resume",
         component: Resume,
+    },
+    {
+        screen_name: "Technical Landscape",
+        component: TechnicalLandscape,
     },
 ];
 
