@@ -4,9 +4,11 @@ import ScrollService from'../../Utilities/ScrollService';
 import Animations from '../../Utilities/Animations';
 import './Aboutme.css'
 
+
+
 export default function AboutMe (props) {
     let fadeInScreenHandler = (screen) => {
-        if(screen.fadeScreen !== props.id) 
+        if(screen.fadeInScreen !== props.id) 
         return 
         Animations.animations.fadeInScreen(props.id)
     }
