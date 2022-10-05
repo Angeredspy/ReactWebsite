@@ -127,9 +127,3 @@ body ::-webkit-scrollbar-thumb {
 .red-border {
   border: 1px solid var(--error-message) !important;
 }
-
-.fade-in {
-  opacity: .9;
-  transform: translateY(80px);
-  transition: all 0.8s ease;
-}
