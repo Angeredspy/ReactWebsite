@@ -31,9 +31,22 @@ export default function ContactMe(props) {
         const handleMessage = (e) => {
             setMessage(e.target.value);
         }
-        console.log(message)
 
+        const submitForm = (e) => {
+            e.preventDefault();
+            try {
+                let data = {
+                    name,
+                    email,
+                    message,
+                }
+                setBool(true)
+                const res = axios.post('/contact', data)
+            } catch (error) {
+                console.log(error)
+            }
 
+        }
     return (
         <div classname='main-container' id={props.id || ''}>
             <ScreenHeading 
@@ -79,7 +92,7 @@ export default function ContactMe(props) {
                         <h4>Shoot Me A Message!</h4>
                         <img src={imgBack} alt='image not found'/>
                     </div>
-                    <form>
+                    <form onSubmit={submitForm}>
                         <p>{banner}</p>
                         <label htmlFor='name'>Name</label>
                         <input type='text'
