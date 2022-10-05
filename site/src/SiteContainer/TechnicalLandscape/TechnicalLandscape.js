@@ -5,6 +5,8 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from '../../Utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../Utilities/ScrollService';
 import Animations from '../../Utilities/Animations';
+import './TechnicalLandscape.css';
+import shape from '../../Assets/Landscape/shape-bg-landscape.png'
 
 export default function TechnicalLandscape(props) {
 
@@ -49,142 +51,65 @@ export default function TechnicalLandscape(props) {
                             <div className='col-lg-12'>
                                 <div className='landscape-item'>
                                     <div className='landscape-comment'>
-                                        <p>
-                                            <i className='fa fa-quote-left'/>
-                                            Mezmo (formerly LogDNA) gives developers better 
-                                            insight in regard to the state of their application by centralizing affiliated logs to 
-                                            one singluar location in real time.
-                                            <i className='fa fa-quote-right'/>
-                                        </p>
-                                        <ul className='stars list-unstyled'>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star-half-alt'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='tehnical-info'>
+                                    <h5>Mezmo</h5>
+                                    <div className='technical-info'>
                                         <img src='../LandscapeImages/mezmologo.png' alt='no internet connection'></img>
-                                        <h5>Mezmo</h5>
-                                        <p>Mezmo is a data platform allowing for better control and routing of real time data.</p>
+                                    </div>
+                                        <p>
+                                            <i className='fa fa-lightbulb-o'/>
+                                            Mezmo (formerly LogDNA) is a data platform that gives developers better 
+                                            insight in regard to the state of their application by routing & centralizing affiliated logs to 
+                                            a singular location in real time.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-12'>
                                 <div className='landscape-item'>
                                     <div className='landscape-comment'>
-                                        <p>
-                                            <i className='fa fa-quote-left'/>
-                                            AWS provides developers with a 
-                                            plethora of cloud computing services, including cloud storage
-                                            relational database services, container solutions & much more.
-                                            <i className='fa fa-quote-right'/>
-                                        </p>
-                                        <ul className='stars list-unstyled'>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star-half-alt'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='tehnical-info'>
+                                    <h5>Amazon Web Services</h5>
+                                    <div className='technical-info'>
                                         <img src='../LandscapeImages/AWS.png' alt='no internet connection'></img>
-                                        <h5>Amazon Web Services</h5>
-                                        <p>AWS is a robust cloud computing platform offering a variety of infrastructure services, such as AWS S3 cloud storage.</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div className='col-lg-12'>
-                                <div className='landscape-item'>
-                                    <div className='landscape-comment'>
                                         <p>
-                                            <i className='fa fa-quote-left'/>
-                                            Google Apps Scripts is a service that allows developers to 
-                                            imbue business logic with JavaScript to create seamless automations, 
-                                            intergrated within the Google Workspace.
-                                            <i className='fa fa-quote-right'/>
+                                            <i className='fa fa-lightbulb-o'/>
+                                            AWS is a robust cloud computing platform providing developers with 
+                                            a variety of infrastructure services including cloud storage (S3)
+                                            relational database services, container solutions & much more.
                                         </p>
-                                        <ul className='stars list-unstyled'>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star-half-alt'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='tehnical-info'>
-                                        <img src='../LandscapeImages/GoogleAppsScript.svg' alt='no internet connection'></img>
-                                        <h5>Google Apps Scripts</h5>
-                                        <p>Apps Scripts comes provided with built in libraries & a code editor. This means that automated logic is able to be integrated quickly, and with relative ease.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-12'>
                                 <div className='landscape-item'>
                                     <div className='landscape-comment'>
+                                    <h5>Google Apps Scripts</h5>
+                                    <div className='technical-info'>
+                                        <img src='../LandscapeImages/GoogleAppsScript.svg' alt='no internet connection'></img>
+                                    </div>
                                         <p>
-                                            <i className='fa fa-quote-left'/>
-                                            Heroku is a platform as a service (PaaS), that allows developers to build and deploy
+                                            <i className='fa fa-lightbulb-o'/>
+                                            Google Apps Scripts is a service equipped with built in libraries & a code editor
+                                            allowing developers to imbue business logic with
+                                            JavaScript to create seamless automations, 
+                                            intergrated within the Google Workspace.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className='col-lg-12'>
+                                <div className='landscape-item'>
+                                    <div className='landscape-comment'>
+                                            <h5>Heroku</h5>
+                                            <div className='technical-info'>
+                                                <img src='../LandscapeImages/heroku.png' alt='no internet connection'></img>                                        
+                                            </div>
+                                            <p>
+                                            <i className='fa fa-lightbulb-o'/>
+                                            Heroku is a platform as a service (PaaS) & a Container Solution similar to Docker and AWS containers, that allows developers to build and deploy
                                             scalable applications within virtualized Linux containers named Dynos. Herokus CLI commands make it
                                             easy to interact with Heroku via the command line.
-                                            <i className='fa fa-quote-right'/>
-                                        </p>
-                                        <ul className='stars list-unstyled'>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star-half-alt'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='tehnical-info'>
-                                        <img src='../LandscapeImages/heroku.png' alt='no internet connection'></img>
-                                        <h5>Heroku</h5>
-                                        <p>Heroku is a container solution similar to others such as Docker and AWS containers.
-                                            Container solutions allow developers to deploy applications on virtualized containers,
-                                            ensuring that the application retains its state across all machines it is being run on.
                                         </p>
                                     </div>
                                 </div>
@@ -192,138 +117,65 @@ export default function TechnicalLandscape(props) {
                             <div className='col-lg-12'>
                                 <div className='landscape-item'>
                                     <div className='landscape-comment'>
-                                        <p>
-                                            <i className='fa fa-quote-left'/>
-                                            Metabase is a BI tool, empowering developers & entire organizations to better understand their data through
-                                            the provision of charts, graphs & other useful metrics that can be integrated with a provided Database & sufficient Querying skills.
-                                            <i className='fa fa-quote-right'/>
-                                        </p>
-                                        <ul className='stars list-unstyled'>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star-half-alt'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='tehnical-info'>
+                                    <h5>Metabase</h5>
+                                    <div className='technical-info'>
                                         <img src='../LandscapeImages/Metabase.png' alt='no internet connection'></img>
-                                        <h5>Metabase</h5>
-                                        <p>As a powerful BI tool, Metabase comes with an incredibly assistive & well documented API
-                                            allowing devlopers to instantiate and access database instances in a variety of locations.
-                                        </p>
+                                    </div>
+                                        <p>
+                                            <i className='fa fa-lightbulb-o'/>
+                                            Metabase is a BI tool, empowering developers and entities to better understand their data through
+                                            the provision of charts, graphs & other useful metrics that can be integrated with a provided Database. Metabase comes with an incredibly 
+                                            assistive & well documented API, allowing devlopers to instantiate and access database instances in a variety of locations.
+                                        </p>                                      
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-12'>
                                 <div className='landscape-item'>
                                     <div className='landscape-comment'>
+                                    <h5>Postman</h5>
+                                    <div className='technical-info'>
+                                        <img src='../LandscapeImages/postmanproper.png' alt='no internet connection'></img>
+                                    </div>
                                         <p>
-                                            <i className='fa fa-quote-left'/>
-                                            Postman is an application that allows users to create collections of API endpoints 
+                                            <i className='fa fa-lightbulb-o'/>
+                                            Postman is an application that allows users to create collections 
+                                            (and custom environment configurations if need be) of API endpoints 
                                             that can be utilized and tested within a provided GUI.
-                                            <i className='fa fa-quote-right'/>
                                         </p>
-                                        <ul className='stars list-unstyled'>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star-half-alt'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='tehnical-info'>
-                                        <img src='../LandscapeImages/postman.jpeg' alt='no internet connection'></img>
-                                        <h5>Postman</h5>
-                                        <p>Postman allows developers to build and test API's, alongside custom environment configurations.(ex, Staging or Production).</p>
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-12'>
                                 <div className='landscape-item'>
                                     <div className='landscape-comment'>
-                                        <p>
-                                            <i className='fa fa-quote-left'/>
-                                            Sendgrid allows an entity to send out emails without needing to maintain an internal email server. The service
-                                            also manages technical details such as scaling, and real time analytical insight.
-                                            <i className='fa fa-quote-right'/>
-                                        </p>
-                                        <ul className='stars list-unstyled'>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star-half-alt'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='tehnical-info'>
+                                    <h5>Sendgrid</h5>
+                                    <div className='technical-info'>
                                         <img src='../LandscapeImages/Sendgrid.png' alt='no internet connection'></img>
-                                        <h5>Sendgrid</h5>
-                                        <p>Sendgrid allows developers to create templates to automate the sending of Emails in correlation to a particular action, event, or state change.</p>
+                                    </div>
+                                        <p>
+                                            <i className='fa fa-lightbulb-o'/>
+                                            Sendgrid allows an entity to send out emails without needing to maintain an internal email server. Developers can create
+                                            templates to automate the sending of Emails in correlation to a particular action, event, or state change.
+                                            The service also manages technical details such as scaling, and real time analytical insights.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-12'>
                                 <div className='landscape-item'>
                                     <div className='landscape-comment'>
-                                        <p>
-                                            <i className='fa fa-quote-left'/>
-                                                Twilio is a customer engagement platform which handles the delivery of automated SMS messages
-                                                and notifications to a userbase, making it easy to transmit timely & important information.
-                                            <i className='fa fa-quote-right'/>
-                                        </p>
-                                        <ul className='stars list-unstyled'>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star-half-alt'/>
-                                            </li>
-                                            <li>
-                                                <i className='fa fa-star'/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='tehnical-info'>
+                                    <h5>Twilio</h5>
+                                    <div className='technical-info'>
                                         <img src='../LandscapeImages/twilio.jpeg' alt='no internet connection'></img>
-                                        <h5>Twilio</h5>
-                                        <p>Twilio provides a modern communication API Used by developers for establishing communications.</p>
+                                    </div>
+                                        <p>
+                                            <i className='fa fa-lightbulb-o'/>
+                                                Twilio is a customer engagement platform that provides a modern communication 
+                                                API which developers utilize to handle the delivery of automated SMS messages
+                                                and notifications to a userbase, making it easy to establish communications & 
+                                                transmit timely & important information.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -331,6 +183,9 @@ export default function TechnicalLandscape(props) {
                     </div>
                 </div>
             </section>
+            <div className="footer-image">
+                <img src={shape} alt="You seem to be having connection issues." />
+            </div>
         </div>
     )
 } 

@@ -1,0 +1,90 @@
+.landscape-section {
+    padding: 80px 0 80px;
+    background-image: url("../../Assets/Landscape/stacked-steps-haikei-2.svg");
+    background-position: left;
+    position: relative;
+    z-index: -1;
+}
+
+.landscape-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .10;
+    background-color: #1f2235;
+}
+
+.footer-image {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: -110px;
+}
+
+.footer-image img{
+    max-width: 100%;
+    height: 130px;
+}
+
+.landscape-section .landscape-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px 50px 50px 0px;
+}
+
+.landscape-section .landscape-item p {
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    font-style: italic;
+    padding-top: 35px;
+}
+
+.landscape-section .landscape-item p .fa-lightbulb-o {
+    margin-right: 5px;
+    color: var(--blurple)
+}
+
+.landscape-section .landscape-item p .fa-quote-right {
+    margin-right: 5px;
+    color: var(--blurple)
+}
+
+.landscape-section .technical-info {
+    position: relative;
+    padding-left: 70px;
+    padding-top: 5px;
+    min-height: 60px;
+}
+
+.landscape-section .technical-info img {
+    height: 145px;
+    width: 155px;
+    border: 3px inset rgb(107, 45, 193);
+    border-radius: 50%;
+    position: center;
+}
+.landscape-section .landscape-comment h5{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 0 0 2px;
+    font-family:'Poppins SemiBold';
+}
+
+.landscape-section .technical-info p{
+font-size: 16px;
+line-height: 26px;
+font-weight: 600;
+margin: 0;
+}
+
+
