@@ -24,6 +24,6 @@
     "server": "nodemon server.js",
     "site": "npm start --prefix site",
     "dev": "concurrently \"npm run server\" \"npm run site\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix site && npm run build --prefix site"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --force --prefix site && npm run build --prefix site"
   }
 }
