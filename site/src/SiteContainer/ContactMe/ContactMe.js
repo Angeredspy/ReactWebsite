@@ -75,9 +75,9 @@ export default function ContactMe(props) {
                 <Typical
                   steps={[
                     "Lets Chat! 💬",
-                    2000,
+                    5000,
                     "Get In Touch! 📨",
-                    2000,
+                    5000,
                   ]}
                   loop={Infinity}
                 />
