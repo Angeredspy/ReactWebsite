@@ -12,7 +12,7 @@ export default function AboutMe (props) {
     }
         const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
         const SCREEN_CONSTANTS = {
-            description: `I am a seasoned Engineer, experienced in building scalable applications & using OOP languages such as Node JS and Python alongside relational DBs. My current goal is to return to Doctors Without Borders as a Software Engineer, and to assist the MSF team in providing independent, impartial medical humanitarian assistance to the people who need it most.`,
+            description: `I am a seasoned Engineer, experienced in building scalable applications & using OOP languages such as Node JS and Python alongside relational DBs. My current goal is to return to Doctors Without Borders as a Software Engineer, and to assist the MSF team in providing independent, impartial medical humanitarian assistance to the people who need it most through my technical skills.`,
             highlights: {
                 bullets:[
                     'Frontend and Backend Web Development (Bootstrap, Typescript)',
