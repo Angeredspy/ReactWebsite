@@ -172,7 +172,7 @@ export default function Resume (props) {
       />
       <ResumeHeading 
       heading='Running' 
-      description='Apart from being a tech enthusiast, I also enjoy running outside of work and consider it to be very therapeutic. Currently, I can run 3 miles with a pace of 7 minutes flat per mile!'
+      description='Apart from being a tech enthusiast, I also enjoy running outside of work and consider it to be very therapeutic. Currently, I can run a 5K with a pace of 7 minutes flat per mile!'
       />
       <ResumeHeading 
       heading='Dogs' 
