@@ -1,6 +1,14 @@
 .main-container {
     min-height: 100vh;
 }
+.final-div {
+    color:rgb(69, 69, 160);
+    font-size: 13px;
+}
+.love-span {
+    color: red;
+}
+
 .central-form {
     max-width: 1100px;
     padding: 10px;

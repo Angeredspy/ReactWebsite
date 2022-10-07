@@ -140,6 +140,7 @@ export default function ContactMe(props) {
                     </form>
                 </div>
             </div>
+            <div className='final-div'>🌀🌀Made With <span className='love-span'>Love</span> By Chris, 2022🌀🌀</div>
         </div>
     )
 }
