@@ -111,19 +111,19 @@ export default function ContactMe(props) {
                     </div>
                     <form onSubmit={submitForm}>
                         <p>{banner}</p>
-                        <label htmlFor='name'>Name</label>
+                        <label htmlFor='name'>Your Name</label>
                         <input type='text'
                         onChange={handleName}
                         value={name}
                         />
 
-                        <label htmlFor='email'>Email</label>
+                        <label htmlFor='email'>Your Email</label>
                         <input type='text'
                         onChange={handleEmail}
                         value={email}
                         />
                         
-                        <label htmlFor='message'>Message</label>
+                        <label htmlFor='message'>Your Message</label>
                         <textarea type='text'
                         onChange={handleMessage}
                         value={message}
