@@ -37,6 +37,9 @@ export default function TechnicalLandscape(props) {
                 }
             }
         }
+
+        //ToDo, add OwlCarousel component div section to describe TablePlus 
+        //and its advantages as a Database Management System 
         
     return (
         <div>
