@@ -37,9 +37,6 @@ export default function TechnicalLandscape(props) {
                 }
             }
         }
-
-        //ToDo, add OwlCarousel component div section to describe TablePlus 
-        //and its advantages as a Database Management System 
         
     return (
         <div>
@@ -130,6 +127,23 @@ export default function TechnicalLandscape(props) {
                                             the provision of charts, graphs & other useful metrics that can be integrated with a provided Database. Metabase comes with an incredibly 
                                             assistive & well documented API, allowing devlopers to instantiate and access database instances in a variety of locations.
                                         </p>                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-lg-12'>
+                                <div className='landscape-item'>
+                                    <div className='landscape-comment'>
+                                    <h5>TablePlus</h5>
+                                    <div className='technical-info'>
+                                        <img src='../LandscapeImages/TablePlusLogo.png' alt='no internet connection'></img>
+                                    </div>
+                                        <p>
+                                            <i className='fa fa-lightbulb-o'/>
+                                            TablePlus is a lightweight, intuitive & secure Database Management System that gives developers the power to
+                                            quickly manuever, manipulate & analyze complex and granular database schemas. It allows for multiple customizable 
+                                            Database connections (read-only connections for less technical users for example), and carries support for most popular
+                                            relational databases such as PostgreSQL, MongoDB, MSSQL and more! 
+                                        </p>
                                     </div>
                                 </div>
                             </div>
