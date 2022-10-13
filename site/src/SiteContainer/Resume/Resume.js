@@ -69,19 +69,19 @@ export default function Resume (props) {
         {
             title: 'ChristoSite',
             duration: {fromDate: '2019', toDate: '2022'},
-            description: 'ChristoSite showcases my technical experience in one collective location. It utilizes Heroku for both deployment & hosting.',
+            description: 'ChristoSite showcases my collective technical experience. It utilizes Heroku for deployment & hosting.',
             subHeading: 'Technologies Used: React, JS, Bootstrap, CSS',
         },
         {
             title: 'CBook',
             duration: {fromDate: '2021', toDate: '2022'},
-            description: 'CBook uses ESBuilds Transpiling & Bundling capabilities (via a custom plugin) in the browser. Upon submission of valid JSX code within the given textarea, the transpiled es2015 counterpart will be rendered.',
+            description: 'CBook uses ESBuilds Transpiling & Bundling abilities in the browser. When valid JSX code within the given textarea is submitted, the transpiled es2015 counterpart will be rendered.',
             subHeading: 'Technologies Used: TypeScript, HTML',
         },
         {
             title: 'TestBank',
             duration: {fromDate: '2019', toDate: '2019'},
-            description: 'TestBank is a JS web-application developed alongside strict Agile methodologies. It was created to replace SUNY Albanys test taking software, Blackboard. Users of the application could create, grade and submit exams.',
+            description: 'TestBank is a JS web-app developed with strict Agile methodologies. It was created to replace SUNY Albanys test taking software, Blackboard. Users could create, grade and submit exams.',
             subHeading: 'Technologies Used: Firebase, JavaScript',
         },
     ]; 
