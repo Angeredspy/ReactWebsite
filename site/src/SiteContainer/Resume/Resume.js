@@ -176,7 +176,7 @@ export default function Resume (props) {
       />
       <ResumeHeading 
       heading='Dogs' 
-      description='Perhaps you couldnt tell. The beautiful pup you see above is my 4 year old baby, Merc (short for Mercury).'
+      description='Perhaps you couldnt tell? The beautiful pup you see above is my 4 year old baby, Merc (short for Mercury).'
       />
     </div>,
     ];
