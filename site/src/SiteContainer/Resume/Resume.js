@@ -69,13 +69,13 @@ export default function Resume (props) {
         {
             title: 'ChristoSite',
             duration: {fromDate: '2019', toDate: '2022'},
-            description: 'This personal website showcases my relevant technical experience in one collective location. It utilizes Heroku for both deployment & hosting.',
-            subHeading: 'Technologies Used: React, JS, Bootstrap, HTML, CSS',
+            description: 'ChristoSite showcases my technical experience in one collective location. It utilizes Heroku for both deployment & hosting.',
+            subHeading: 'Technologies Used: React, JS, Bootstrap, CSS',
         },
         {
             title: 'CBook',
             duration: {fromDate: '2021', toDate: '2022'},
-            description: 'CBook when locally executed displays a text box within the browser which is coupled with ESBuild transpiling, and overridden bundling capabilities via a custom made plugin which relays to the NPM registry and provides the appropriate data to the in browser bundler. When a user submits valid JSX code within the textarea in the browser, the transpiled es2015 Javascript counterpart will be displayed beneath.',
+            description: 'CBook uses ESBuilds Transpiling & Bundling capabilities (via a custom plugin) in the browser. Upon submission of valid JSX code within the given textarea, the transpiled es2015 counterpart will be rendered.',
             subHeading: 'Technologies Used: TypeScript, HTML',
         },
         {
