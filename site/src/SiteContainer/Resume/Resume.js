@@ -70,7 +70,7 @@ export default function Resume (props) {
             title: 'ChristoSite',
             duration: {fromDate: '2019', toDate: '2022'},
             description: 'ChristoSite showcases my collective technical experience. It utilizes Heroku for deployment & hosting.',
-            subHeading: 'Technologies Used: React, JS, Bootstrap, CSS',
+            subHeading: 'Technologies Used: React, JS, Bootstrap',
         },
         {
             title: 'CBook',
