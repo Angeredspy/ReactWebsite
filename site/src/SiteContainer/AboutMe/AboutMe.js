@@ -12,7 +12,7 @@ export default function AboutMe (props) {
     }
         const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
         const SCREEN_CONSTANTS = {
-            description: `I am a seasoned Engineer, experienced in building scalable applications & using OOP languages such as Node JS and Python alongside relational DBs. My current goal is to return to Doctors Without Borders as a Software Engineer, and to assist the MSF team in providing independent, impartial medical humanitarian assistance to the people who need it most through my technical skills.`,
+            description: `I am a seasoned Engineer, experienced in building scalable applications & using OOP languages such as Node JS and Python alongside relational DBs. I currently work at Doctors Without Borders as a Software Engineer, assisting the MSF team to provide independent, impartial medical & humanitarian assistance to the people who need it most through my technical skills.`,
             highlights: {
                 bullets:[
                     'Frontend and Backend Web Development (Bootstrap, Typescript)',
@@ -20,8 +20,8 @@ export default function AboutMe (props) {
                     'T.D.D. paradigms & testing with frameworks like Jest & Jasmine',
                     'Technical resolutions to internal & external UX issues',
                     'Critical Task Automations',
-                    'Expert use of 3rd party tooling; see my Technical Landscape!', //tech landscape will replace testimonial
-                ],                                                                                  // and will showcase the technologies i am familiar with and have interacted with extensively 
+                    'Expert use of 3rd party tooling; see my Technical Landscape!', 
+                ],                                                                                 
                 heading: 'Part of what I bring to the table:'
             }
         }
