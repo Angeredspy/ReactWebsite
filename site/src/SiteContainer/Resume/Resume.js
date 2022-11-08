@@ -55,14 +55,14 @@ export default function Resume (props) {
   
     
     const programmingSkillsDetails = [
-        {skill: 'TypeScript', ratingPercentage: 0},
-        {skill: 'JavaScript', ratingPercentage: 0},
-        {skill: 'Node JS', ratingPercentage: 0},
-        {skill: 'Python', ratingPercentage: 0},
-        {skill: 'PostgreSQL', ratingPercentage: 0},
-        {skill: 'React', ratingPercentage: 0},
-        {skill: 'Jest & Jasmine Testing', ratingPercentage: 0},
-        {skill: 'HTML & CSS', ratingPercentage: 0}
+        {skill: 'TypeScript'},
+        {skill: 'JavaScript'},
+        {skill: 'Node JS'},
+        {skill: 'Python'},
+        {skill: 'PostgreSQL'},
+        {skill: 'React'},
+        {skill: 'Jest & Jasmine Testing'},
+        {skill: 'HTML & CSS'}
     ];
   
     const projectDetails = [
@@ -140,12 +140,6 @@ export default function Resume (props) {
           <div className="skill-parent" key={index}>
             <div className="heading-bullet"></div>
             <span>{skill.skill}</span>
-            <div className="skill-percentage">
-              <div
-                style={{ width: skill.ratingPercentage + "%" }}
-                className="active-percentage-bar"
-              ></div>
-            </div>
           </div>
         ))}
       </div>,
