@@ -1,15 +1,42 @@
-import React from "react";
+import React, {useState} from "react";
 import Typical from "react-typical"; 
 import './Profile.css';
 import ScrollService from "../../../Utilities/ScrollService";
+import smoothTunes from '../../../Assets/Home/beneaththemask.mp3';
+
+let music = new Audio(smoothTunes)
+
+let play = () => {
+  music.play();
+} 
+
+let pause = () => {
+  music.pause();
+}
 
 export default function Profile() {
+  const [count, setCount] = useState(1);
   return (
     <div className="profile-container padding-div">
       <div className="profile-parent">
         <div className="profile-details">
           <div className="cols">
             <div className="cols-icon">
+                <a
+                  onClick={() => {
+                    if(count % 2 !== 0) {
+                      play()
+                    } else {
+                      pause()
+                    }
+                    setCount(count+1);
+                  }}
+                  rel="noreferrer"
+                  href="#"
+                  title='Enjoy some tunes while youre here!'
+                >
+                  <i style={{color: "rgb(94, 161, 240)"}} className="fa fa-music"></i>
+                </a>
               <a
                 href="https://github.com/Angeredspy"
                 target="_blank"

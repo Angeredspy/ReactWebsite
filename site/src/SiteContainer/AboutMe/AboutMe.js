@@ -34,7 +34,7 @@ export default function AboutMe (props) {
                     </div>
                 ))
             )
-        }
+        } 
 
     return (
         <div className='about-me-container screen-container fade-in' id={props.id || ''}>
