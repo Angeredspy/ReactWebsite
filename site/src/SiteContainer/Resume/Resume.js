@@ -61,7 +61,7 @@ export default function Resume (props) {
         {skill: 'C#, Python'},
         {skill: 'PostgreSQL'},
         {skill: 'React'},
-        {skill: 'Jest, Jasmine Tests'},
+        {skill: 'Jest, Jasmine'},
         {skill: 'Angular, HTML & CSS'}
     ];
   
@@ -125,7 +125,7 @@ export default function Resume (props) {
                 </span>
                 <br/>
                 <span className='resume-description-text-see-more'>
-                    (Please click the "Get Resume" button above to see more of my previous work experience.)
+                    (Please click the "Get Resume" button above to see more of my recent work experience.)
                 </span>
             </div>
       </div>
