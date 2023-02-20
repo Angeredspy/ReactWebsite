@@ -88,7 +88,7 @@ export default function Profile() {
                 />
               </h1>
               <span className="profile-role-tagline">
-                Tech lover with a knack for front & back end operations.
+                Tech lover & problem solver with a knack for front & back end operations.
               </span>
             </span>
           </div>

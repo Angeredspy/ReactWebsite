@@ -57,12 +57,12 @@ export default function Resume (props) {
     const programmingSkillsDetails = [
         {skill: 'TypeScript'},
         {skill: 'JavaScript'},
-        {skill: 'Node JS'},
-        {skill: 'Python'},
+        {skill: 'DotNet, Node JS'},
+        {skill: 'C#, Python'},
         {skill: 'PostgreSQL'},
         {skill: 'React'},
-        {skill: 'Jest & Jasmine Testing'},
-        {skill: 'HTML & CSS'}
+        {skill: 'Jest, Jasmine Tests'},
+        {skill: 'Angular, HTML & CSS'}
     ];
   
     const projectDetails = [
@@ -104,7 +104,7 @@ export default function Resume (props) {
             heading={'Notable Finance'}
             subHeading={'Data Engineer'}
             fromDate={'2021'}
-            toDate={'Present'}
+            toDate={'2022'}
             />
             <div className='experience-description'>
                 <span className='resume-description-text'>
