@@ -17,6 +17,11 @@
     color: aliceblue;
 } 
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
 .profile-details {
     font-size: 24px;
     font-family: "Poppins SemiBold";
