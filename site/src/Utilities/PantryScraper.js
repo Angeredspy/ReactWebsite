@@ -34,7 +34,7 @@ const fetchFoodDistributionInfo = async () => {
         }
       });
     });
-return foodDistributionList;
+ console.log(foodDistributionList);
   } catch (error) {
     console.error('Error fetching data:', error);
   }
