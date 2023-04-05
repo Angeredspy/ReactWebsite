@@ -17,10 +17,21 @@
     color: aliceblue;
 } 
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 300ms ease-in-out;
+.modal-overlay {
+  background-color: rgba(116, 159, 237, 0.869);
+  animation: fade-in 500ms forwards;
+  color:rgb(94, 161, 240)
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .profile-details {
     font-size: 24px;
