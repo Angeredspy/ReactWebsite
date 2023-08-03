@@ -72,13 +72,6 @@ const customStyles = {
                 <i className="fa fa-github-alt"></i>
               </a>
               <a
-                href="https://destinyboundny.wixsite.com/website"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <i className="fa fa-heartbeat"></i>
-              </a>
-              <a
                 href="https://www.goodnewsnetwork.org"
                 target="_blank"
                 rel="noreferrer"
