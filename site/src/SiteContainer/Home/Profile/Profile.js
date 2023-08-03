@@ -21,6 +21,15 @@ Modal.setAppElement('#root');
 export default function Profile() {
   const [count, setCount] = useState(1);
   const [activeIcon, setActiveIcon] = useState(null);
+  const [rowData, setRowData] = useState([]);
+
+    const fetchData = async () => {
+    const response = await fetch('/pantries.txt');
+    const text = await response.text();
+    const lines = text.split('\n');
+    setRowData(lines);
+  };
+
 
   const closeModal = () => {
     setActiveIcon(null);
@@ -28,6 +37,9 @@ export default function Profile() {
 
   const openModal = (icon) => {
     setActiveIcon(icon);
+    if (icon === 'spoon') {
+      fetchData();
+    }
   };
     
 const customStyles = {
@@ -79,21 +91,27 @@ const customStyles = {
                 <i className="fa fa-globe"></i>
               </a>
               <a
-            onClick={() => openModal("globe")}
-            href="#"
-            title="Open modal for globe icon"
-          >
-            <i className="fa fa-spoon"></i>
+                onClick={() => openModal("spoon")}
+                href="#"
+                title="Open modal for spoon icon"
+              >
+                <i className="fa fa-spoon"></i>
           </a>
           <Modal
-        isOpen={activeIcon === "globe"}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Globe Modal"
-        overlayClassName="modal-overlay"
-      >
+            isOpen={activeIcon === "spoon"}
+            onRequestClose={closeModal}
+            style={customStyles}
+            contentLabel="Spoon Modal"
+            overlayClassName="modal-overlay"
+          >
         <h2>Food Pantry Modal</h2>
-        <p>Food Pantry information will go here.</p>
+        <p>Below you will find a list of locations for upcoming mobile food pantries.</p>
+        
+        <div>
+          {rowData.map((line, index) => (
+            <p key={index}>{line}</p>
+          ))}
+        </div>
         <button onClick={closeModal}>Close</button>
       </Modal>
             </div>
