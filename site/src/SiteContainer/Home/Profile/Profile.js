@@ -69,6 +69,7 @@ const getCustomStyles = () => {
       transform: 'translate(-50%, -50%)',
       width: width,
       padding: padding,
+      paddingTop: '7rem',
       border: '2px solid #4F2781',
       backgroundImage: 'url(/stacked-steps-haikei-2.svg)',
       backgroundSize: 'cover',
