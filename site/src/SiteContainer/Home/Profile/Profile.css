@@ -212,6 +212,16 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+  .modal-h2 {
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
+
+  .modal-paragraph {
+    font-size: .9rem; /* Adjust font size for mobile */
+  }
+}
+
 @media only screen and (max-width: 375px) { 
     .profile-pricture {
         height: 275px;

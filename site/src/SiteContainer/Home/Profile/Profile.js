@@ -42,22 +42,47 @@ export default function Profile() {
     }
   };
     
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    width: '50%',
-    padding: '2rem',
-    position: 'fixed',
-    border: '2px solid #4F2781',
-    backgroundImage: 'url(/stacked-steps-haikei-2.svg)',
-    backgroundSize: 'cover',
-    fontFamily: 'Arial, sans-serif',
-  },
+const getCustomStyles = () => {
+  const windowWidth = window.innerWidth;
+
+  let width = '95%'; // Default for mobile
+  let padding = '1rem'; // Default padding for mobile
+
+  if (windowWidth >= 768) {
+    // Tablet and up
+    width = '70%';
+    padding = '2rem';
+  }
+
+  if (windowWidth >= 992) {
+    // Desktop and up
+    width = '50%';
+  }
+
+  return {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+      width: width,
+      padding: padding,
+      border: '2px solid #4F2781',
+      backgroundImage: 'url(/stacked-steps-haikei-2.svg)',
+      backgroundSize: 'cover',
+      fontFamily: 'Arial, sans-serif',
+      wordWrap: 'break-word', 
+      overflowY: 'auto', 
+    },
+  };
+};
+
+const closeButtonStyle = {
+  display: 'block', 
+  margin: '20px auto',
+  textAlign: 'center', 
 };
 
   return (
@@ -105,15 +130,13 @@ const customStyles = {
           <Modal
             isOpen={activeIcon === "spoon"}
             onRequestClose={closeModal}
-            style={customStyles}
+            style={getCustomStyles()}
             contentLabel="Spoon Modal"
             overlayClassName="modal-overlay"
           >
-        <h2 style={{ textAlign: 'center', color: '#E7DCAC', fontWeight: 'bold',}}>Mobile Food Pantries</h2>
-        <p style={{color: '#E7DCAC'}}>Below you will find a list of locations for upcoming mobile food pantries.</p>
-        <p style={{color: '#E7DCAC'}}>Know someone who could use this? Pass it along!</p>
-        
-        <div style={{color: '#E7DCAC', fontWeight: 'bold',}}>
+        <h2 className="modal-h2" style={{ textAlign: 'center', color: '#E7DCAC', fontWeight: 'bold',}}>Mobile Food Pantries</h2>
+        <p className="modal-paragraph" style={{color: '#E7DCAC'}}>Below is a list of mobile pantries & their locations. Know someone who can use it? Pass it on!</p>
+        <div className="modal-paragraph" style={{color: '#E7DCAC', fontWeight: 'bold',}}>
      {rowData.map((line, index) => {
       const parts = line.split(" | ");
       const directionsPart = parts[3].split(": ");
@@ -135,7 +158,7 @@ const customStyles = {
     );
   })}
 </div>
-        <button onClick={closeModal} class="btn-close">Close</button>
+        <button onClick={closeModal} style={closeButtonStyle}>Close</button>
       </Modal>
             </div>
           </div>
