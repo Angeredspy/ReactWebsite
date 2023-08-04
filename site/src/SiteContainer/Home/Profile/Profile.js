@@ -114,10 +114,27 @@ const customStyles = {
         <p style={{color: '#E7DCAC'}}>Know someone who could use this? Pass it along!</p>
         
         <div style={{color: '#E7DCAC', fontWeight: 'bold',}}>
-          {rowData.map((line, index) => (
-            <p key={index}>{line}</p>
-          ))}
-        </div>
+     {rowData.map((line, index) => {
+      const parts = line.split(" | ");
+      const directionsPart = parts[3].split(": ");
+      const linkText = directionsPart[0];
+      const linkURL = directionsPart[1];
+
+      return (
+       <p key={index}>
+          {parts[0]} | {parts[1]} | {parts[2]} | {linkText}:{" "}
+          <a
+           href={linkURL}
+           target="_blank"
+            rel="noreferrer"
+            style={{ color: "#E7DCAC" }}
+        >
+          Directions
+        </a>
+      </p>
+    );
+  })}
+</div>
         <button onClick={closeModal} class="btn-close">Close</button>
       </Modal>
             </div>
