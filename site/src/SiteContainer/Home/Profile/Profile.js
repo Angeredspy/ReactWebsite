@@ -52,6 +52,11 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     width: '50%',
     padding: '2rem',
+    position: 'fixed',
+    border: '2px solid #4F2781',
+    backgroundImage: 'url(/stacked-steps-haikei-2.svg)',
+    backgroundSize: 'cover',
+    fontFamily: 'Arial, sans-serif',
   },
 };
 
@@ -104,15 +109,16 @@ const customStyles = {
             contentLabel="Spoon Modal"
             overlayClassName="modal-overlay"
           >
-        <h2>Food Pantry Modal</h2>
-        <p>Below you will find a list of locations for upcoming mobile food pantries.</p>
+        <h2 style={{ textAlign: 'center', color: '#E7DCAC', fontWeight: 'bold',}}>Mobile Food Pantries</h2>
+        <p style={{color: '#E7DCAC'}}>Below you will find a list of locations for upcoming mobile food pantries.</p>
+        <p style={{color: '#E7DCAC'}}>Know someone who could use this? Pass it along!</p>
         
-        <div>
+        <div style={{color: '#E7DCAC', fontWeight: 'bold',}}>
           {rowData.map((line, index) => (
             <p key={index}>{line}</p>
           ))}
         </div>
-        <button onClick={closeModal}>Close</button>
+        <button onClick={closeModal} class="btn-close">Close</button>
       </Modal>
             </div>
           </div>
