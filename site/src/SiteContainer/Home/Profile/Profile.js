@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Typical from "react-typical"; 
 import './Profile.css';
 import ScrollService from "../../../Utilities/ScrollService";
-import smoothTunes from '../../../Assets/Home/HeroGarden.mp3'; //Base is ...beneaththemask.mp3
+import smoothTunes from '../../../Assets/Home/BackToYou.mp3'; //Base is ...beneaththemask.mp3
 import Modal from "react-modal";
 
 let music = new Audio(smoothTunes)
