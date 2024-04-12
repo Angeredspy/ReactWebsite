@@ -47,6 +47,7 @@ const getCustomStyles = () => {
 
   let width = '95%'; // Default for mobile
   let padding = '1rem'; // Default padding for mobile
+  let maxHeight = '70vh'; // Maximum scroll height
 
   if (windowWidth >= 768) {
     // Tablet and up
@@ -69,13 +70,15 @@ const getCustomStyles = () => {
       transform: 'translate(-50%, -50%)',
       width: width,
       padding: padding,
-      paddingTop: '7rem',
+      paddingTop: '1.5rem',
       border: '2px solid #4F2781',
       backgroundImage: 'url(/stacked-steps-haikei-2.svg)',
       backgroundSize: 'cover',
       fontFamily: 'Arial, sans-serif',
       wordWrap: 'break-word', 
-      overflowY: 'auto', 
+      overflowY: 'scroll', 
+      maxHeight: maxHeight,
+      borderRadius: '20px'
     },
   };
 };
@@ -136,7 +139,7 @@ const closeButtonStyle = {
             overlayClassName="modal-overlay"
           >
         <h2 className="modal-h2" style={{ textAlign: 'center', color: '#E7DCAC', fontWeight: 'bold',}}>Mobile Food Pantries</h2>
-        <p className="modal-paragraph" style={{color: '#E7DCAC'}}>Below is a list of mobile pantries & their locations. Know someone who can use it? Pass it on!</p>
+        <p className="modal-paragraph" style={{color: '#E7DCAC'}}>Below is a list of mobile pantries & their locations for this month. Know someone who can use it? Pass it on!</p>
         <div className="modal-paragraph" style={{color: '#E7DCAC', fontWeight: 'bold',}}>
      {rowData.map((line, index) => {
       const parts = line.split(" | ");
