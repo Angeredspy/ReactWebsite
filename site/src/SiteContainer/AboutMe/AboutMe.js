@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'; 
+import React from 'react'; 
 import ScreenHeading from '../../../src/Utilities/ScreenHeading/ScreenHeading.js';
 import ScrollService from'../../Utilities/ScrollService';
 import Animations from '../../Utilities/Animations';
@@ -10,17 +10,17 @@ export default function AboutMe (props) {
         return 
         Animations.animations.fadeInScreen(props.id)
     }
-        const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
+        ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
         const SCREEN_CONSTANTS = {
-            description: `I am a seasoned Software Engineer, experienced in building scalable applications & using OOP languages such as Node JS and Python alongside relational DBs. I currently work at Doctors Without Borders as a Software Engineer, assisting the MSF team to provide independent, impartial medical & humanitarian assistance to the people who need it most through my technical skills.`,
+            description: `I'm a Software Engineer focused on building reliable web applications and data workflows across React/Next.js and Angular, with a strong foundation in SQL and cloud services. At Doctors Without Borders (MSF), I integrated OpenAI's GPT-4 into existing systems, improved search with Azure Cognitive Search, and led migrations while automating pipelines with Python + Apache Airflow. I care about measurable outcomes—faster search, better SEO/indexing, and smoother releases backed by Cypress and Jest.`,
             highlights: {
                 bullets:[
-                    'Frontend and Backend Web Development (Bootstrap & Angular, Typescript & C#...)',
-                    'Experienced Database Management & Maintenance',
-                    'T.D.D. paradigms & testing with frameworks like Jest & Jasmine',
-                    'Technical resolutions to internal & external UX issues',
-                    'Critical Task Automations',
-                    'Expert use of 3rd party tooling; see my Technical Landscape!', 
+                    'Frontend & Backend Web Development (Angular, React, Next.js, C#, TypeScript)',
+                    'Database design, PostgreSQL/T-SQL, ETL pipelines & migrations',
+                    'OpenAI API (GPT-4) integration and Azure Cognitive Search improvements',
+                    'Python + Apache Airflow automation for critical workflows',
+                    'End-to-end & unit testing with Cypress and Jest',
+                    'SEO fixes: Google Indexing, crawler APIs, Search Console/Analytics, Screaming Frog', 
                 ],                                                                                 
                 heading: 'Part of what I bring to the table:'
             }
