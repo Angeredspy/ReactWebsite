@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import Typical from "react-typical"; 
+import MorphingText from './MorphingText';
 import './Profile.css';
 import ScrollService from "../../../Utilities/ScrollService";
-import smoothTunes from '../../../Assets/Home/Breathe.mp3'; //Base is ...beneaththemask.mp3
+import smoothTunes from '../../../Assets/Home/3Am.mp3'; //Base is ...beneaththemask.mp3
 import Modal from "react-modal";
 
 let music = new Audio(smoothTunes)
@@ -95,21 +95,29 @@ const closeButtonStyle = {
         <div className="profile-details">
           <div className="cols">
             <div className="cols-icon">
-                <a
-                  onClick={() => {
-                    if(count % 2 !== 0) {
-                      play()
-                    } else {
-                      pause()
-                    }
-                    setCount(count+1);
-                  }}
-                  rel="noreferrer"
-                  href="#"
-                  title='Enjoy some tunes while youre here!'
-                >
-                  <i style={{color: "rgb(94, 161, 240)"}} className="fa fa-music"></i>
-                </a>
+                <div className="music-button-container">
+                  <a
+                    onClick={() => {
+                      if(count % 2 !== 0) {
+                        play()
+                      } else {
+                        pause()
+                      }
+                      setCount(count+1);
+                    }}
+                    rel="noreferrer"
+                    href="#"
+                    title='Enjoy some tunes while youre here!'
+                  >
+                    <i style={{color: "rgb(94, 161, 240)"}} className="fa fa-music"></i>
+                  </a>
+                  <div className="comic-bubble">
+                    <div className="bubble-content">
+                      <span className="bubble-text">Why not enjoy yourself?</span>
+                      <div className="bubble-tail"></div>
+                    </div>
+                  </div>
+                </div>
               <a
                 href="https://github.com/Angeredspy"
                 target="_blank"
@@ -176,21 +184,14 @@ const closeButtonStyle = {
             <span className="primary-text">
               {" "}
               <h1>
-                {" "}
-                <Typical
-                  steps={[
+                <MorphingText
+                  texts={[
                     "Tangible Industry Experience",
-                    1000,
                     "Graceful Knowledge Application",
-                    1000,
                     "Fruitful & Fun Collaboration",
-                    1000,
-                    "Software Philomath",
-                    2000,
+                    "Software Philomath"
                   ]}
-                  loop={Infinity}
-                  wrapper="p"
-                  className="typical-class"
+                  speed={4500}
                 />
               </h1>
               <span className="profile-role-tagline">

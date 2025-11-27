@@ -1,0 +1,242 @@
+.git-activity-container {
+    min-height: 100vh;
+    background-image: url('../../../public/stacked-steps-haikei-2.svg');
+}
+
+.git-activity-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Override ScreenHeading styles for this section */
+.git-activity-container .screen-heading {
+    color: var(--white) !important;
+}
+
+.git-activity-container .screen-sub-heading {
+    color: var(--white) !important;
+}
+
+.git-activity-description {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 30px auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.git-activity-description p {
+    margin-bottom: 20px;
+}
+
+.git-activity-description ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.git-activity-description li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.git-activity-description li:before {
+    content: "⦿";
+    color: var(--sea-green);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.git-activity-description a {
+    color: var(--sea-green);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.git-activity-description a:hover {
+    color: var(--light-blue);
+    text-decoration: underline;
+}
+
+.git-activity-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.git-main-image {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+}
+
+.git-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.git-screenshot:hover {
+    transform: scale(1.02);
+}
+
+.git-image-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+.git-nav-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.git-nav-btn:hover {
+    background: var(--sea-green);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.git-image-year {
+    background: rgba(0, 188, 173, 0.9);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    backdrop-filter: blur(5px);
+}
+
+.git-thumbnails {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.git-thumbnail {
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    position: relative;
+    width: 150px;
+}
+
+.git-thumbnail.active {
+    border-color: var(--sea-green);
+    transform: scale(1.05);
+}
+
+.git-thumbnail:hover {
+    transform: scale(1.05);
+    border-color: var(--white);
+}
+
+.git-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.thumbnail-year {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 1110px) {
+    .git-activity-content {
+        padding: 0 15px;
+        height: auto;
+        min-height: 100vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .git-main-image {
+        max-width: 100%;
+    }
+    
+    .git-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .git-thumbnails {
+        gap: 10px;
+    }
+    
+    .git-thumbnail {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .git-activity-description {
+        font-size: 14px;
+    }
+    
+    .git-image-controls {
+        padding: 0 10px;
+    }
+    
+    .git-nav-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+    }
+    
+    .git-image-year {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .git-thumbnail {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .git-thumbnails {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .git-thumbnail {
+        width: 200px;
+    }
+}

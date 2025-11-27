@@ -57,11 +57,15 @@ export default function Resume (props) {
     const programmingSkillsDetails = [
         {skill: 'TypeScript'},
         {skill: 'JavaScript'},
-        {skill: 'DotNet, Node JS'},
-        {skill: 'C#, Python'},
-        {skill: 'PostgreSQL'},
-        {skill: 'React'},
-        {skill: 'Jest, Jasmine'},
+        {skill: 'Azure OpenAI & LangChain'},
+        {skill: 'Databricks'},
+        {skill: 'Docker & Containerization'},
+        {skill: 'Next.js, React'},
+        {skill: 'Azure AI Search & DevOps'},
+        {skill: 'Apache Airflow'},
+        {skill: 'Cypress, Jest'},
+        {skill: 'PostgreSQL, T-SQL'},
+        {skill: 'Python, C#'},
         {skill: 'Angular, HTML & CSS'}
     ];
   
@@ -101,31 +105,36 @@ export default function Resume (props) {
       <div className="resume-screen-container" key="work-experience">
         <div className="experience-container">
           <ResumeHeading
-            heading={'Notable Finance'}
-            subHeading={'Data Engineer'}
-            fromDate={'2021'}
-            toDate={'2022'}
+            heading={'Médecins Sans Frontières / Doctors Without Borders'}
+            subHeading={'Software Engineer'}
+            fromDate={'2022'}
+            toDate={'Present'}
             />
             <div className='experience-description'>
                 <span className='resume-description-text'>
-                ⦿ Gracefully handled ownership of the Resolution/Escalation of all Engineering department related web-application issues.
+                ⦿ Designed and deployed an internal AI chatbot using Azure OpenAI & LangChain with secure data access and RAG pipelines.
                 </span>
             </div>
             <div className='experience-description'>
                 <span className='resume-description-text'>
-                ⦿ Utilized TypeScript to develop and utilize backend processes to propel a smooth U.X. within our App
+                ⦿ Built Databricks pipelines to extract structured data from PDFs, output JSON, and automate reporting to Excel.
                 </span>
                 <br/>
                 <span className='resume-description-text'>
-                ⦿ Monitored multiple Staging and Production repositories for the Web Application.
+                ⦿ Enhanced enterprise search relevance through Azure AI Search with custom analyzers, synonym maps, & scoring profiles.
                 </span>
                 <br/> 
                 <span className='resume-description-text'>
-                ⦿ Utilized partner company API’s and JS to create large, essential automated data flows around the organization.
+                ⦿ Led migrations across Next.js + Angular frontends, containerized deployments, & Python + Apache Airflow automation.
                 </span>
                 <br/>
+                <span className='resume-description-text'>
+                ⦿ Strengthened testing with Cypress (end-to-end) and Jest (unit), increasing reliability of feature releases.
+                </span>
+            </div>
+            <div className='experience-description'>
                 <span className='resume-description-text-see-more'>
-                    (Please click the "Get Resume" button above to see more of my recent work experience.)
+                    (Please click the "Get Resume" button above to see my complete work experience and technical skills.)
                 </span>
             </div>
       </div>
@@ -161,8 +170,8 @@ export default function Resume (props) {
       /* Interests */
       <div className='resume-screen-container' key='interests'>
       <ResumeHeading 
-      heading='Charity' 
-      description='I am a member of a charity named Destiny Bound which empowers families, single parents and young adults. Learn more about Destiny Bound & our events by clicking the heart on the homepage above.'
+      heading='Artificial Intelligence' 
+      description='I have a passion for building practical AI solutions that solve real-world problems. Recently, I developed AI RAG chatbots that analyze medical journal articles, providing accurate citations and references to support humanitarian research and decision-making.'
       />
       <ResumeHeading 
       heading='Running' 
