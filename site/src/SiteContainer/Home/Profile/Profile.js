@@ -113,7 +113,7 @@ const closeButtonStyle = {
                   </a>
                   <div className="comic-bubble">
                     <div className="bubble-content">
-                      <span className="bubble-text">Why not enjoy yourself?</span>
+                      <span className="bubble-text">Happy Holidays!</span>
                       <div className="bubble-tail"></div>
                     </div>
                   </div>
