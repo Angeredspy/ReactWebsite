@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import MorphingText from './MorphingText';
 import './Profile.css';
 import ScrollService from "../../../Utilities/ScrollService";
-import smoothTunes from '../../../Assets/Home/WonderfulChristmastime.mp3';
+import smoothTunes from '../../../Assets/Home/FestiveFestivities.mp3';
 import Modal from "react-modal";
 
 let music = new Audio(smoothTunes)
