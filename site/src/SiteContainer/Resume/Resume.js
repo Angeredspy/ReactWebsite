@@ -91,70 +91,70 @@ export default function Resume (props) {
     ]; 
   
     const resumeDetails = [
-      <div className="resume-screen-container" key="education">
-        <ResumeHeading 
+      <div className='resume-screen-container' key='education'>
+        <ResumeHeading
           heading={'University At Albany, SUNY'}
-          subHeading={'Bachelor Of Science: Computer Science (Mathematics Concentration)'}
-          secondSubHeading={'Overseer of on campus nonprofit & community service organizations (Purple Threads).'}
+          subHeading={
+            'Bachelor Of Science: Computer Science (Mathematics Concentration)'
+          }
+          secondSubHeading={
+            'Overseer of on campus nonprofit & community service organizations (Purple Threads).'
+          }
           fromDate={'2015'}
           toDate={'2019'}
         />
-        </div>,
-  
+      </div>,
+
       /* WORK EXPERIENCE */
-      <div className="resume-screen-container" key="work-experience">
-        <div className="experience-container">
+      <div className='resume-screen-container' key='work-experience'>
+        <div className='experience-container'>
           <ResumeHeading
             heading={'Médecins Sans Frontières / Doctors Without Borders'}
             subHeading={'Software Engineer'}
             fromDate={'2022'}
             toDate={'Present'}
-            />
-            <div className='experience-description'>
-                <span className='resume-description-text'>
-                ⦿ Designed and deployed an internal AI chatbot using Azure OpenAI & LangChain with secure data access and RAG pipelines.
-                </span>
-            </div>
-            <div className='experience-description'>
-                <span className='resume-description-text'>
-                ⦿ Built Databricks pipelines to extract structured data from PDFs, output JSON, and automate reporting to Excel.
-                </span>
-                <br/>
-                <span className='resume-description-text'>
-                ⦿ Enhanced enterprise search relevance through Azure AI Search with custom analyzers, synonym maps, & scoring profiles.
-                </span>
-                <br/> 
-                <span className='resume-description-text'>
-                ⦿ Led migrations across Next.js + Angular frontends, containerized deployments, & Python + Apache Airflow automation.
-                </span>
-                <br/>
-                <span className='resume-description-text'>
-                ⦿ Strengthened testing with Cypress (end-to-end) and Jest (unit), increasing reliability of feature releases.
-                </span>
-            </div>
-            <div className='experience-description'>
-                <span className='resume-description-text-see-more'>
-                    (Please click the "Get Resume" button above to see my complete work experience and technical skills.)
-                </span>
-            </div>
-      </div>
-</div>,
-  
+          />
+          <div className='experience-description'>
+            <span className='resume-description-text'>
+              ⦿ Designed and deployed an internal AI chatbot using Azure OpenAI
+              & LangChain with secure data access and RAG pipelines.
+            </span>
+            <br />
+            <span className='resume-description-text'>
+              ⦿ Built Databricks pipelines to extract structured data from PDFs,
+              output JSON, and automate reporting to Excel.
+            </span>
+            <br />
+            <span className='resume-description-text'>
+              ⦿ Enhanced enterprise search relevance through Azure AI Search
+              with custom analyzers, synonym maps, & scoring profiles.
+            </span>
+            <br />
+            <span className='resume-description-text'>
+              ⦿ Led migrations across Next.js + Angular frontends, containerized
+              deployments, & Python + Apache Airflow automation, & introduced
+              Cypress E2E testing.
+            </span>
+            <br />
+          </div>
+        </div>
+      </div>,
+
       /* PROGRAMMING SKILLS */
       <div
-        className="resume-screen-container programming-skills-container"
-        key="programming-skills"
+        className='resume-screen-container programming-skills-container'
+        key='programming-skills'
       >
         {programmingSkillsDetails.map((skill, index) => (
-          <div className="skill-parent" key={index}>
-            <div className="heading-bullet"></div>
+          <div className='skill-parent' key={index}>
+            <div className='heading-bullet'></div>
             <span>{skill.skill}</span>
           </div>
         ))}
       </div>,
-  
+
       /* PROJECTS */
-      <div className="resume-screen-container" key="projects">
+      <div className='resume-screen-container' key='projects'>
         {projectDetails.map((projectDetails, index) => (
           <ResumeHeading
             key={index}
@@ -166,22 +166,22 @@ export default function Resume (props) {
           />
         ))}
       </div>,
-  
+
       /* Interests */
       <div className='resume-screen-container' key='interests'>
-      <ResumeHeading 
-      heading='Artificial Intelligence' 
-      description='I have a passion for building practical AI solutions that solve real-world problems. Recently, I developed AI RAG chatbots that analyze medical journal articles, providing accurate citations and references to support humanitarian research and decision-making.'
-      />
-      <ResumeHeading 
-      heading='Running' 
-      description='Apart from being a tech enthusiast, I also enjoy running outside of work and consider it to be very therapeutic. Currently, I can run a 5K with a pace of 7 minutes flat per mile!'
-      />
-      <ResumeHeading 
-      heading='Dogs' 
-      description='Perhaps you couldnt tell? The beautiful pup you see above is my 4 year old baby, Merc (short for Mercury).'
-      />
-    </div>,
+        <ResumeHeading
+          heading='Artificial Intelligence'
+          description='I have a passion for building practical AI solutions that solve real-world problems. Recently, I developed AI RAG chatbots that analyze medical journal articles, providing accurate citations and references to support humanitarian research and decision-making.'
+        />
+        <ResumeHeading
+          heading='Running'
+          description='Apart from being a tech enthusiast, I also enjoy running outside of work and consider it to be very therapeutic. Currently, I can run a 5K with a pace of 7 minutes flat per mile!'
+        />
+        <ResumeHeading
+          heading='Dogs'
+          description='Perhaps you couldnt tell? The beautiful pup you see above is my 4 year old baby, Merc (short for Mercury).'
+        />
+      </div>,
     ];
   
     const handleCarousal = (index) => {
