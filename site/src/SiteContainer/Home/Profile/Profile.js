@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import MorphingText from './MorphingText';
 import './Profile.css';
 import ScrollService from "../../../Utilities/ScrollService";
-import smoothTunes from '../../../Assets/Home/FestiveFestivities.mp3';
+import smoothTunes from '../../../Assets/Home/3Am.mp3';
 import Modal from "react-modal";
 
 let music = new Audio(smoothTunes)
@@ -113,7 +113,7 @@ const closeButtonStyle = {
                   </a>
                   <div className="comic-bubble">
                     <div className="bubble-content">
-                      <span className="bubble-text">Happy Holidays!</span>
+                      <span className="bubble-text">Why not enjoy yourself?</span>
                       <div className="bubble-tail"></div>
                     </div>
                   </div>
